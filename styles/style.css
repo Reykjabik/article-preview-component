@@ -1,0 +1,274 @@
+/*
+============
+Fonts
+============
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+/*
+============
+Variables
+============
+*/
+
+:root {
+  --vd-grayblue: hsl(217, 19%, 35%);
+  --desat-dkblue: hsl(214, 17%, 51%);
+  --grayblue: hsl(212, 23%, 69%);
+  --grayblue-shadow: hsla(212, 23%, 69%, 0.3);
+  --lt-grayblue: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+/*
+=============
+Global Styles
+=============
+*/
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lt-grayblue);
+}
+
+/*
+==============
+Global classes
+==============
+*/
+
+.card {
+  height: 39.4rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem var(--grayblue-shadow);
+}
+
+.header {
+  flex: 40%;
+  min-height: 15.4rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+  position: relative;
+  bottom: 1rem;
+}
+
+.main {
+  flex: 47%;
+  padding: 2.6rem 2.6rem 1.5rem;
+}
+
+.heading {
+  color: var(--vd-grayblue);
+  font-size: 1.25rem;
+  margin-bottom: 1.3rem;
+}
+
+.subheading {
+  color: var(--desat-dkblue);
+  line-height: 1.5;
+}
+
+.user-info {
+  flex: 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem 2.5rem 1rem;
+}
+
+.user-info .user-pic {
+  max-width: 15%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.user-info .user-name-date {
+  font-size: 0.85rem;
+  width: 11.5rem;
+}
+
+.date {
+  color: var(--grayblue);
+  margin-top: 0.3rem;
+}
+
+.share-btn {
+  border: 0;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  vertical-align: center;
+}
+
+.share-btn:hover {
+  background-color: var(--vd-grayblue);
+  color: var(--lt-grayblue);
+}
+
+.overlay {
+  flex: 13%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem 1rem;
+  background-color: var(--vd-grayblue);
+  color: var(--grayblue);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.share-text {
+  max-width: 15%;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.share-btns {
+  width: 11.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.share-btns i {
+  height: 100%;
+  color: #fff;
+  font-style: normal;
+  margin-left: 1.2rem;
+  font-size: 1.7rem;
+  z-index: 1;
+}
+
+.overlay .share-btn {
+  background-color: var(--desat-dkblue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*
+===========
+Media query
+===========
+*/
+
+@media (min-width: 900px) {
+  .card {
+    width: 63rem;
+    height: 23rem;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 0.75fr 0.25fr;
+    position: relative;
+  }
+
+  .header {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+
+  .header img {
+    position: relative;
+    left: 2.4rem;
+    top: 2.15rem;
+    transform: scale(124%);
+    object-fit: cover;
+  }
+
+  .main {
+    padding: 2.8rem 4.2rem 0 3.2rem;
+  }
+
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .subheading {
+    padding-right: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  .user-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 0 4.2rem 2rem 2.8rem;
+  }
+
+  .user-pic {
+    width: 11%;
+    height: auto;
+  }
+
+  .user-name-date {
+    flex: 50%;
+    margin-left: 1.7rem;
+  }
+
+  .user-name {
+    font-size: 1.05rem;
+  }
+
+  .date {
+    font-size: 0.95rem;
+  }
+
+  .overlay {
+    width: 17rem;
+    position: absolute;
+    right: -3rem;
+    top: 50%;
+    padding: 1.4rem 2.5rem;
+    border-radius: 0.75rem;
+    z-index: 1;
+    box-shadow: 0 0.7rem 0.7rem var(--lt-grayblue);
+  }
+
+  .overlay::before {
+    content: "";
+    background-color: var(--vd-grayblue);
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 3rem;
+    left: 7.6rem;
+    transform: rotate(45deg);
+    z-index: 0;
+    box-shadow: 0.7rem 0.7rem 0.7rem var(-lt-grayblue);
+  }
+
+  .share-btns {
+    margin-left: 2rem;
+  }
+}

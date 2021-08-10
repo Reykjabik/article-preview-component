@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://use.fontawesome.com/cd2b882d37.js"></script>
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- Drawers image -->
+    <header class='header'>
+      <img src="./images/drawers.jpg" alt="picture of drawers">
+    </header>
+
+    <!-- Main text section -->
+    <main class='main'>
+      <h1 class="heading">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+      <p class="subheading">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+    </main>
+    
+    <!-- User infomation at the bottom -->
+    <section class="user-info" id='user-info'>
+      <img class='user-pic' src="./images/avatar-michelle.jpg" alt="">
+      <div class="user-name-date">
+        <h3 class='user-name'>Michelle Appleton</h3>
+        <p class='date'>28 Jun 2020</p>
+      </div>
+      <button class='share-btn' id='share-btn'><img src="./images/icon-share.svg" alt=""></button>
+    </section>
+
+    <!-- Overlay showing after share button -->
+    <section class="overlay" id='overlay'>
+      <p class="share-text">share</p>
+      <div class="share-btns">
+        <i class='fab fa-facebook fa-lg'></i>
+        <i class='fab fa-twitter fa-lg'></i>
+        <i class='fab fa-pinterest fa-lg'></i>
+      </div>
+      <button class='share-btn'><img src="./images/icon-share-inverted.svg" alt=""></button>
+    </section>
+  </div>
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Reykjabik">Reykjabik</a>.</p>
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
