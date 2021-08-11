@@ -15,42 +15,42 @@
 </head>
 <body>
 
-  <div class="card">
+  <div class="card" role='content'>
 
     <!-- Drawers image -->
-    <header class='header'>
+    <header class='header' role='image'>
       <img src="./images/drawers.jpg" alt="picture of drawers">
     </header>
 
     <!-- Main text section -->
-    <main class='main'>
+    <main class='main' role='description'>
       <h1 class="heading">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
       <p class="subheading">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
     </main>
     
     <!-- User infomation at the bottom -->
-    <section class="user-info" id='user-info'>
+    <section class="user-info" id='user-info' role='user-information'>
       <img class='user-pic' src="./images/avatar-michelle.jpg" alt="">
       <div class="user-name-date">
-        <h3 class='user-name'>Michelle Appleton</h3>
+        <h2 class='user-name'>Michelle Appleton</h2>
         <p class='date'>28 Jun 2020</p>
       </div>
-      <button class='share-btn' id='share-btn'><img src="./images/icon-share.svg" alt=""></button>
+      <button class='share-btn' id='share-btn' aria-label='Share'><img src="./images/icon-share.svg" alt=""></button>
     </section>
 
     <!-- Overlay showing after share button -->
-    <section class="overlay" id='overlay'>
+    <section class="overlay" id='overlay' role='share-information'>
       <p class="share-text">share</p>
       <div class="share-btns">
         <i class='fab fa-facebook fa-lg'></i>
         <i class='fab fa-twitter fa-lg'></i>
         <i class='fab fa-pinterest fa-lg'></i>
       </div>
-      <button class='share-btn'><img src="./images/icon-share-inverted.svg" alt=""></button>
+      <button class='share-btn' aria-label='Share'><img src="./images/icon-share-inverted.svg" alt=""></button>
     </section>
   </div>
 
-  <div class="attribution">
+  <div class="attribution" role='attribution'>
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/Reykjabik">Reykjabik</a>.</p>
   </div>
